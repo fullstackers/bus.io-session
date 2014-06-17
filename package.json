@@ -1,6 +1,6 @@
 {
   "name": "bus.io-session",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Session middleware for your bus.io apps",
   "main": "index.js",
   "scripts": {
@@ -27,6 +27,9 @@
     "grunt-jasmine-bundle": "^0.2.0",
     "grunt-cli": "^0.1.13",
     "grunt": "^0.4.5",
-    "bus.io": "*"
+    "bus.io": "0.0.83-beta"
+  },
+  "dependencies": {
+    "socket.io-handshake": "0.0.1"
   }
 }

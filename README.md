@@ -4,8 +4,6 @@
 
 ![Bus.IO](https://raw.github.com/turbonetix/bus.io/master/logo.png)
 
-# WIP
-
 Session middleware for bus.io that uses [express-session](https://www.npmjs.org/package/express-session "express session").
 
 ```javascript
@@ -13,6 +11,23 @@ Session middleware for bus.io that uses [express-session](https://www.npmjs.org/
 var bus = require('bus.io')();
 var session = require('bus.io-session');
 bus.use(session());
+
+```
+
+The underlying component is [socket.io-handshake](https://www.npmjs.org/packages/socket.io-handshake "socket.io-handshake").  
+Which means this middleware components accepts the same configuration options.  Here is a complete
+example.
+
+```javascript
+
+var session = require('express-session');
+var RedisStore = require('connect-redis')(session);
+var sessionStore = return new RedisStore();
+var cookieParser = require('cookie-parser');
+var session = require('bus.io-session');
+
+var bus = require('bus.io')(3000);
+bus.use(session({store: sessionStore, key:'sid', secret:'secret', parser:cookieParser()}));
 
 ```
 
