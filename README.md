@@ -15,7 +15,7 @@ bus.use(session());
 ```
 
 The underlying component is [socket.io-handshake](https://www.npmjs.org/packages/socket.io-handshake "socket.io-handshake").  
-Which means this middleware components accepts the same configuration options.  Here is a complete
+Which means this middleware component accepts the same configuration options.  Here is a complete
 example.
 
 ```javascript
