@@ -22,7 +22,7 @@ example.
 
 var expressSession = require('express-session');
 var RedisStore = require('connect-redis')(expressSession);
-var sessionStore = return new RedisStore();
+var sessionStore = new RedisStore();
 var cookieParser = require('cookie-parser');
 var session = require('bus.io-session');
 
