@@ -1,6 +1,6 @@
 {
   "name": "bus.io-session",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Session middleware for your bus.io apps",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,6 @@
     "bus.io": "~0.1.0"
   },
   "dependencies": {
-    "socket.io-handshake": "0.0.3"
+    "socket.io-handshake": "0.0.4"
   }
 }
