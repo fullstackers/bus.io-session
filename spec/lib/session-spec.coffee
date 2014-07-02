@@ -1,6 +1,9 @@
 describe 'Session', ->
     
-  Given -> @Session = requireSubject 'lib/session', {}
+  Given -> @Session = requireSubject 'lib/session', {
+    'express-session': require('express-session')
+    'connect-redis': require('connect-redis')
+  }
   Given -> @bus = require('bus.io')()
 
   describe '#', ->
