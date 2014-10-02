@@ -1,6 +1,6 @@
 {
   "name": "bus.io-session",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Session middleware for your bus.io apps",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,6 @@
     "socket.io-handshake": "^0.0",
     "connect-redis": "^2.0.0",
     "express-session": "^1.6.1",
-    "debug": "^1.0.2"
+    "debug": "^2.0.0"
   }
 }
